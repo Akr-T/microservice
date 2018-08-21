@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: dashboard
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8067/eureka/
