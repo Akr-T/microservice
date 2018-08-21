@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: api-gateway
+
+server:
+  port: 8090
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8067/eureka
+zuul:
+  routes:
+    dashboard:
+      path: /dashboard/*
+      serviceId: dashboard
